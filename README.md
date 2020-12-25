@@ -1,2 +1,2 @@
 # StVAR
-# Vector AutoRegression with Student s Distribution using Maximum Likelihood Estimation
+# Vector AutoRegression with Student's Distribution using Maximum Likelihood Estimation
