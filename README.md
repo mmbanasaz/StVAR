@@ -18,3 +18,8 @@ in comand prompt ''' pip install . ''',
 ## Usage
 
 from StVAR import *
+
+%simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degreefo freedom and n is number of observations
+
+sim = Simulation_St([5, -2, 0, 3], 4, n=100, trend=False)  
+
