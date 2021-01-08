@@ -17,9 +17,29 @@ in comand prompt ''' pip install . ''',
 
 ## Usage
 
+```
 from StVAR import *
+```
 
 %simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degreefo freedom and n is number of observations
 
 sim = Simulation_St([5, -2, 0, 3], 4, n=100, trend=False)  
+
+%graphs
+
+'''for i in range (sim.shape[1]):
+    fig, ax = plt.subplots(figsize=(20, 10))
+    ax.plot(sim.iloc[:,i], color='r')    
+    plt.show()'''
+    
+#%% StVAR MLE estimator, reparametrization, std.error, Var Cov Estimation, fits, and residuals 
+
+v = int(input("Enter the dof: "))
+
+trend = int(input("Enter the Mean trend's degree: "))
+
+lag = int(input("Enter the number of lags: "))
+
+
+
 
