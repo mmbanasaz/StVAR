@@ -10,26 +10,26 @@ Run the following to install:
 
 Download "StVAR-0.0.1.tar.gz" file and unzip it in your computer,
 
-in command prompt change the current directory to the location of unziped file. e.g. cd C:\Users\...\StVAR-0.0.1,
+In command prompt change the current directory to the location of unziped file. e.g. cd C:\Users\...\StVAR-0.0.1,
 
-in comand prompt ''' pip install . ''',
+In comand prompt ''' pip install . ''',
 
 
 ## Usage
 Please read StVAR model expalanation 
 
-import StVAR Package
+Import StVAR Package
 ```ruby
 from StVAR import *
 ```
 
-simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degree of freedom and n is number of observations
+Simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degree of freedom and n is number of observations
 ```ruby
 sim = Simulation_St([5, -2, 0, 3], 4, n=100, trend=False)  
 data = sim
 ```
 
-plot the graphs 
+Plot the graphs 
 ```ruby
 for i in range (data.shape[1]):
     fig, ax = plt.subplots(figsize=(20, 10))
@@ -55,7 +55,7 @@ Var Cov Estimation
 Var_Cov (data, v, trend, lag)
 ```
 
-fits, and residuals
+Fits, and residuals
 ```ruby
 fit(data, v, trend, lag)
 St = Adj_fit(data, v, trend, lag)
