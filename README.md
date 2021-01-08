@@ -7,7 +7,8 @@ For a complete explanation please read the "StVAR Model Explanation.pdf"
 
 ## Installation
 Run the following to install:
-
 '''python
 pip install StVAR
 '''
+
+## Usage
