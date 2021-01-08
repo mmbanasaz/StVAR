@@ -12,7 +12,7 @@ Download "StVAR-0.0.1.tar.gz" file and unzip it
 
 in command prompt change the current directory to the location of unziped file. e.g. cd C:\Users\...\StVAR-0.0.1
 
-in comand prompt ''' pip install .'''
+in comand prompt ''' pip install . '''
 
 
 ## Usage
