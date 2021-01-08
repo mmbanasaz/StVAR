@@ -17,13 +17,15 @@ in comand prompt ''' pip install . ''',
 
 ## Usage
 
-```
+import StVAR Package
+```ruby
 from StVAR import *
 ```
 
-%simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degreefo freedom and n is number of observations
-
+Simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degree of freedom and n is number of observations
+```ruby
 sim = Simulation_St([5, -2, 0, 3], 4, n=100, trend=False)  
+```
 
 %graphs
 
