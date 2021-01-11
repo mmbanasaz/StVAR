@@ -2,7 +2,7 @@
 
 Vector AutoRegression Statistical Model with Student's Distribution using Maximum Likelihood Estimation.
 
-The primary goal of this package is to model Mean and Variance of several associated financial variables simultaneously and through time. The main assumption is that their stochastic behavior resembles Student's t distribution.  
+The primary goal of this package is to model the conditional mean and variance of several associated financial variables simultaneously and through time. That information can be utilized for risk measurement, portfolio optimization, option pricing, and prediction. The main assumption is that the stochastic process resembles a joint Student's t distribution and Markov process.
 For a complete explanation please read the "StVAR Model Explanation.pdf"
 
 ## Installation
