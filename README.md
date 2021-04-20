@@ -10,7 +10,7 @@ Run the following to install:
 
 Download "StVAR-0.0.4.tar.gz" file and unzip it in your computer,
 
-In command prompt change the current directory to the location of unziped file. e.g. cd C:\Users\...\StVAR-0.0.1,
+In command prompt change the current directory to the location of unziped file. e.g. cd C:\Users\...\StVAR-0.0.4,
 
 In comand prompt ''' pip install . ''',
 
