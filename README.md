@@ -8,7 +8,7 @@ For a complete explanation please read the "StVAR Model Explanation.pdf"
 ## Installation
 Run the following to install:
 
-Download "StVAR-0.0.4.tar.gz" file and unzip it in your computer,
+Download "StVAR-0.0.4.zip" file and unzip it in your computer,
 
 In command prompt change the current directory to the location of unziped file. e.g. cd C:\Users\...\StVAR-0.0.4,
 
@@ -20,12 +20,12 @@ Please read StVAR model expalanation
 
 Import StVAR Package
 ```ruby
-from StVAR import *
+import StVAR as stv
 ```
 
 Simulate 4 variables with student's t distribution, means are ordered in a list [5, -2, 0, 3], v is degree of freedom and n is number of observations
 ```ruby
-sim = Simulation_St([5, -2, 0, 3], 4, n=100, trend=False)  
+sim = stv.Simulation_St([5, -2, 0, 3], 4, n=100, trend=False)  
 data = sim
 ```
 
