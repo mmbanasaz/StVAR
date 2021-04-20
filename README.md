@@ -47,21 +47,22 @@ lag = int(input("Enter the number of lags: "))
 StVAR MLE estimator, reparametrization, std.errors
 ```ruby
 # StVAR MLE estimator, reparametrization, std.error,
-a, se_a, A, se_A, Omega, se_Omega, Q, estimates, hess_inv, jac = StVAR_est(data, v, trend, lag)
+a, se_a, A, se_A, Omega, se_Omega, Q, estimates, se_estimates, hess_inv, jac = stv.StVAR_est(data, v, trend, lag, scaled = True, cheby = False)
+loglik, logliks, M, SIGMA = stv.St_VAR_likelihood(estimates, data, v, trend, lag, scaled = True, cheby = False, out=True, Mt_all=False)
 ```
 
 Var Cov Estimation
 ```ruby
-Var_Cov (data, v, trend, lag)
+Var_Cov = stv.Var_Cov(data, v, trend, lag, Q, Omega, estimates, scaled = True, cheby = False)
 ```
 
 Fits, and residuals
 ```ruby
-fit(data, v, trend, lag)
-St = Adj_fit(data, v, trend, lag)
+Fit = stv.fit(data, v, trend, lag, a, A, Q, Omega, estimates, scaled = True, cheby = False)
+Adj_Fit = stv.Adj_fit(data, v, trend, lag, a, A, Q, Omega, estimates, fit = Fit, scaled = True, cheby = False)
 ```
 
 Mis-specification Testing
 ```ruby
-MS_testing(data, v, trend, lag)
+stv.MS_testing(data, v, trend, lag, var_cov = Var_Cov, fit = Fit, adj_fit = Adj_Fit,  scaled = True, cheby = False)
 ```
